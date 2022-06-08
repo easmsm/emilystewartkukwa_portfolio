@@ -15,23 +15,31 @@ body  {
   }
 
 header {
-    padding: 20px 10px;
+    padding: 10px;
     background-color: #dee99d;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-end;
   }
 
 header a {
+    padding: 10px;
     text-decoration: none;
     color: var(--main-text);
   }
   
   header nav {
+    padding: 10px;
     margin: 5px 0;
   }
   
+  header h1 {
+      padding: 10px;  
+      align-items: flex-start;
+  }
   header nav ul {
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -40,6 +48,7 @@ header a {
   }
   
   header nav ul li a {
+    padding: 10px;
     margin: 0 20px;
     font-weight: lighter;
     font-size: 1.55vw;
