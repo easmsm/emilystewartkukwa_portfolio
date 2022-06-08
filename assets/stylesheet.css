@@ -1,12 +1,12 @@
 :root {
     --main-text: #3d7c54;
-    --highligh: #dee99d;
+    --highlight: #dee99d;
 }
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 5px;
   }
 
 body  {
@@ -56,4 +56,49 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: auto;
+    height: 80px;
+  }
+
+  .projects {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .project {
+    margin: 5px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+  }
+
+  .project img {
+    border-radius: 20px;
+    background-color: #dee99d;
+    padding: 10px;
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  
+  section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+
+  .contact-me {
+      display: inline-block;
+      flex-wrap: nowrap;
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+      margin: 5px;
   }
