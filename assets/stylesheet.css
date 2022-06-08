@@ -62,7 +62,7 @@ footer {
 
   .projects {
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -72,17 +72,20 @@ footer {
     margin: 5px;
     display: flex;
     flex: 1;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
   }
 
   .project img {
-    border-radius: 45px;
+    border-radius: 20px;
     background-color: #dee99d;
-    padding: 20px;
-    width: 300px;
-    height: 300px;
+    padding: 10px;
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
   }
   
   section {
@@ -92,9 +95,10 @@ footer {
   }
 
   .contact-me {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      display: inline-block;
+      flex-wrap: nowrap;
+      flex: 1;
+      text-align: center;
       padding: 20px;
       margin: 5px;
   }
