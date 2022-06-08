@@ -1,0 +1,36 @@
+:root {
+    --main-text: #3d7c54;
+    --highligh: #dee99d;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body  {
+    color: var(--main-text);
+    font-family: "Lucida Console", Courier, monospace;
+  }
+
+header {
+    padding: 20px 35px;
+    background-color: #dee99d;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+footer {
+
+}
+
+.hero {
+    background-image: url('../assets/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
