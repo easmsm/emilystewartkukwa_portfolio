@@ -5,7 +5,7 @@
 
 *{
     box-sizing: border-box;
-    margin: 20px;
+    margin-left: 10px;
     padding: 5px;
   }
 
@@ -13,6 +13,18 @@ body  {
     color: var(--main-text);
     font-family: "Lucida Console", Courier, monospace;
   }
+
+.profilepicture {
+    display: flex;
+    justify-content: center;
+    }
+
+.profilepicture img {
+    height: 200px;
+    width: auto;
+    border-radius: 20px;
+    border: 5px solid #3d7c54;
+}
 
 header {
     padding: 10px;
@@ -31,7 +43,6 @@ header a {
   
   header nav {
     padding: 10px;
-    margin: 5px 0;
   }
   
   header h1 {
@@ -49,24 +60,8 @@ header a {
   
   header nav ul li a {
     padding: 10px;
-    margin: 0 20px;
     font-weight: lighter;
     font-size: 1.55vw;
-  }
-
-footer {
-
-}
-
-.hero {
-    background-image: url('../assets/images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: auto;
-    height: 80px;
   }
 
   .projects {
@@ -78,24 +73,40 @@ footer {
   }
 
   .project {
-    margin: 5px;
     display: flex;
     flex: 1;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
 
+  .center-block {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
   }
 
   .project img {
     border-radius: 20px;
     background-color: #dee99d;
     padding: 10px;
-    width: 250px;
-    height: auto;
+    width: auto;
+    height: 300px;
     display: flex;
     flex-wrap: wrap;
     flex: 1;
+    justify-content: space-around;
   }
+
+  .img {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+  }
+
+  /* https://ianlunn.github.io/Hover/ */
   
   section {
       display: flex;
@@ -104,10 +115,11 @@ footer {
   }
 
   .contact-me {
-      display: inline-block;
+      display: inline;
       flex-wrap: nowrap;
       flex: 1;
       text-align: center;
       padding: 20px;
-      margin: 5px;
+      margin: 0px;
+      justify-content: center;
   }
