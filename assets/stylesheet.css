@@ -5,7 +5,6 @@
 
 *{
     box-sizing: border-box;
-    margin-left: 10px;
     padding: 5px;
   }
 
@@ -20,6 +19,7 @@ body  {
     }
 
 .profilepicture img {
+    margin-top: 10px;
     height: 200px;
     width: auto;
     border-radius: 20px;
@@ -74,39 +74,31 @@ header a {
 
   .project {
     display: flex;
-    flex: 1;
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  /* make hover effect over projects*/
+
+ 
 
   .center-block {
     display: inline-block;
     width: 100%;
     text-align: center;
   }
-
+  
   .project img {
     border-radius: 20px;
     background-color: #dee99d;
     padding: 10px;
-    width: auto;
+    width: 300px;
     height: 300px;
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
     justify-content: space-around;
+    align-self: center;
   }
-
-  .img {
-    display: inline-block;
-    vertical-align: middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
-    transition-duration: 0.3s;
-    transition-property: box-shadow, transform;
-  }
-
-  /* https://ianlunn.github.io/Hover/ */
   
   section {
       display: flex;
@@ -123,3 +115,42 @@ header a {
       margin: 0px;
       justify-content: center;
   }
+
+  /* media queries */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .project {
+        width: 90%;
+    }
+
+    .projects {
+        width: 90%;
+    }
