@@ -79,9 +79,6 @@ header a {
   }
 
   /* make hover effect over projects*/
-
- 
-
   .center-block {
     display: inline-block;
     width: 100%;
@@ -90,7 +87,7 @@ header a {
   
   .project img {
     border-radius: 20px;
-    background-color: #dee99d;
+    background-color: var(--highlight);
     padding: 10px;
     width: 300px;
     height: 300px;
@@ -99,7 +96,18 @@ header a {
     justify-content: space-around;
     align-self: center;
   }
-  
+
+  .project img:hover {
+    border-radius: 20px;
+    color: var(--highlight);
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    font-weight: bold;
+    background-image: url(assets/images/pixels.jpg);
+    background-repeat: no-repeat;
+  }
+
   section {
       display: flex;
       flex-wrap: wrap;
@@ -154,3 +162,4 @@ header a {
     .projects {
         width: 90%;
     }
+}
