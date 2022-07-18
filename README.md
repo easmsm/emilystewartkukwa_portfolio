@@ -8,7 +8,7 @@ This page includes a header with my name, as well as links to the page sections,
 
 
 
-In the future, the images under the My Work section will represent deployed applications that I want to showcase in my portfolio. For now, the images link to a placeholder which is this project on GitHub pages
+In addition to the link to a team Movie Finder project, in the future, the images under the My Work section will represent deployed applications that I want to showcase in my portfolio. For now, the images link to a placeholder which is this project on GitHub pages
 
 
 
